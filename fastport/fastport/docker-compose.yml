@@ -1,0 +1,94 @@
+version: '3'
+services:
+  ### Mysql database for client
+  db-client:
+    container_name: db-client
+    image: mysql:8.0.33
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ms-client
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - 3306:3306
+  ### Postgres database for comment
+  db-comment:
+    container_name: db-comment
+    image: postgres:15.2
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ms-comment
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+    ports:
+      - 5431:5432  # El puerto interno para PostgreSQL es 5432
+  ### Postgres database for contract
+  db-contract:
+    container_name: db-contract
+    image: postgres:15.2
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ms-contract
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+    ports:
+      - 5432:5432
+  ### Mysql database for driver
+  db-driver:
+    container_name: db-driver
+    image: mysql:8.0.33
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ms-driver
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - 3307:3306  # Cambiado el puerto externo a 3307
+  ### Postgres database for experience
+  db-experience:
+    container_name: db-experience
+    image: postgres:15.2
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ms-experience
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+    ports:
+      - 5433:5432  # El puerto interno para PostgreSQL es 5432
+  ### Postgres database for notification
+  db-notification:
+    container_name: db-notification
+    image: postgres:15.2
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ms-notification
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+    ports:
+      - 5434:5432  # El puerto interno para PostgreSQL es 5432
+  ### Mysql database for payment
+  db-payment:
+    container_name: db-payment
+    image: mysql:8.0.33
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ms-payment
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - 3308:3306  # Cambiado el puerto externo a 3308
+  ### Mysql database for vehicle
+  db-vehicle:
+    container_name: db-vehicle
+    image: mysql:8.0.33
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ms-vehicle
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - 3309:3306  # Cambiado el puerto externo a 3309

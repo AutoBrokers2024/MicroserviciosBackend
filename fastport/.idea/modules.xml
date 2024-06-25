@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/fastport/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/fastport/api-gateway/api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fastport/client-service/client-service.iml" filepath="$PROJECT_DIR$/fastport/client-service/client-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fastport/comment-service/comment-service.iml" filepath="$PROJECT_DIR$/fastport/comment-service/comment-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fastport/contract-service/contract-service.iml" filepath="$PROJECT_DIR$/fastport/contract-service/contract-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fastport/driver-service/driver-service.iml" filepath="$PROJECT_DIR$/fastport/driver-service/driver-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fastport/experience-service/experience-service.iml" filepath="$PROJECT_DIR$/fastport/experience-service/experience-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fastport/fastport.iml" filepath="$PROJECT_DIR$/fastport/fastport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fastport/notification-service/notification-service.iml" filepath="$PROJECT_DIR$/fastport/notification-service/notification-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fastport/payment-service/payment-service.iml" filepath="$PROJECT_DIR$/fastport/payment-service/payment-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fastport/vehicle-service/vehicle-service.iml" filepath="$PROJECT_DIR$/fastport/vehicle-service/vehicle-service.iml" />
+    </modules>
+  </component>
+</project>
