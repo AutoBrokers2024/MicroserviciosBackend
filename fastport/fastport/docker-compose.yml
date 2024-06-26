@@ -56,7 +56,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: root
     ports:
-      - 5433:5432  # El puerto interno para PostgreSQL es 5432
+      - 5435:5432  # El puerto interno para PostgreSQL es 5432
   ### Postgres database for notification
   db-notification:
     container_name: db-notification
