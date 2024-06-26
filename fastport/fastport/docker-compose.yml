@@ -7,7 +7,7 @@ services:
     restart: unless-stopped
     environment:
       MYSQL_DATABASE: ms-client
-      MYSQL_USER: root
+      #MYSQL_USER: root
       MYSQL_PASSWORD: password
       MYSQL_ROOT_PASSWORD: password
     ports:
@@ -41,7 +41,7 @@ services:
     restart: unless-stopped
     environment:
       MYSQL_DATABASE: ms-driver
-      MYSQL_USER: root
+      #MYSQL_USER: root
       MYSQL_PASSWORD: password
       MYSQL_ROOT_PASSWORD: password
     ports:
@@ -75,7 +75,7 @@ services:
     restart: unless-stopped
     environment:
       MYSQL_DATABASE: ms-payment
-      MYSQL_USER: root
+      #MYSQL_USER: root
       MYSQL_PASSWORD: password
       MYSQL_ROOT_PASSWORD: password
     ports:
@@ -87,7 +87,7 @@ services:
     restart: unless-stopped
     environment:
       MYSQL_DATABASE: ms-vehicle
-      MYSQL_USER: root
+      #MYSQL_USER: root
       MYSQL_PASSWORD: password
       MYSQL_ROOT_PASSWORD: password
     ports:

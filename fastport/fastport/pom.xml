@@ -24,6 +24,7 @@
 		<module>comment-service</module>
 		<module>contract-service</module>
 		<module>driver-service</module>
+		<module>discovery-service</module>
 		<module>experience-service</module>
 		<module>notification-service</module>
 		<module>payment-service</module>
@@ -39,8 +40,6 @@
 
 
 	</dependencies>
-
-
 	<dependencyManagement>
 		<dependencies>
 			<dependency>

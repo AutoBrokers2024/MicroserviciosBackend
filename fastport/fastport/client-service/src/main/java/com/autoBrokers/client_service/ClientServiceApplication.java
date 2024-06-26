@@ -9,7 +9,6 @@ import org.springframework.cloud.openfeign.FeignAutoConfiguration;
 @EnableFeignClients(basePackages = "com.autoBrokers.client_service.feignclients")
 @ImportAutoConfiguration({FeignAutoConfiguration.class})
 @SpringBootApplication
-
 public class ClientServiceApplication {
 
 	public static void main(String[] args) {
